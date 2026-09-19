@@ -1,7 +1,7 @@
 #include <iostream>
 
 int calculateSum(int a, int b) {
-    return a - b;
+    return (a + b); // corrected sum calculation
 }
 
 void printStatus() {
