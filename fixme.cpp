@@ -5,7 +5,7 @@ int calculateSum(int a, int b) {
 }
 
 void printStatus() {
-    std::cout << "Status: BAD" << std::endl;
+    std::cout << "Status: BAD" << std::endl;//print function
 }
 
 int main() {
