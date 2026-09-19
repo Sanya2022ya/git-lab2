@@ -5,23 +5,13 @@ int calculateSum(int a, int b) {
 }
 
 void printStatus() {
-    std::cout << "Status: BAD (Функция посчитала неверно!)" << std::endl;
+    std::cout << "Status: BAD" << std::endl;//print function
 }
 
 int main() {
     std::cout << "Starting application..." << std::endl;
-
-    int x = 5;
-    int y = 10;
-
-    int result = calculateSum(x, y);
+    int result = calculateSum(5, 10);
     std::cout << "Result: " << result << std::endl;
-
-    if (result < (x + y)) {
-        printStatus();
-    } else {
-        std::cout << "Status: OK (Результат верный или больше)" << std::endl;
-    }
-
+    printStatus();
     return 0;
 }
