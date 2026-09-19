@@ -1,17 +1,27 @@
 #include <iostream>
 
 int calculateSum(int a, int b) {
-    return (a + b); // corrected sum calculation
+    return (a + b); 
 }
 
 void printStatus() {
-    std::cout << "Status: BAD" << std::endl;
+    std::cout << "Status: BAD (Функция посчитала неверно!)" << std::endl;
 }
 
 int main() {
     std::cout << "Starting application..." << std::endl;
-    int result = calculateSum(5, 10);
+    
+    int x = 5;
+    int y = 10;
+    
+    int result = calculateSum(x, y);
     std::cout << "Result: " << result << std::endl;
-    printStatus();
+    
+    if (result < (x + y)) {
+        printStatus();
+    } else {
+        std::cout << "Status: OK (Результат верный или больше)" << std::endl;
+    }
+    
     return 0;
 }
